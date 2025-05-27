@@ -27,25 +27,35 @@ Este proyecto es un conversor de monedas desarrollado en **Java** que permite a 
 
    ```bash
    javac *.java
+Ejecutar el programa:
 
-   
+bash
+Copiar
+Editar
+java Main
+Seguí las instrucciones en pantalla para:
 
-##Seguí las instrucciones en pantalla para:
+Seleccionar el tipo de conversión.
 
--Seleccionar el tipo de conversión.
+Ingresar el monto que deseás convertir.
 
--Ingresar el monto que deseás convertir.
+Visualizar el resultado de la conversión.
 
--Visualizar el resultado de la conversión.
+El programa te preguntará si deseás continuar. Podés realizar múltiples conversiones o salir del programa.
 
--El programa te preguntará si deseás continuar. Podés realizar múltiples conversiones o salir del programa.
-
-##🗂️ Estructura del proyecto
+🗂️ Estructura del proyecto
 Main.java: Contiene el menú principal y la lógica de interacción con el usuario.
 
 ConversorMoneda.java: Maneja la lógica de conversión y las llamadas a la API.
 
 CambioMoneda.java: Clase record que modela los datos de la conversión (respuesta de la API).
+
+Menu.java: Opciones del menú para el usuario.
+
+📌 Notas
+Este proyecto utiliza la API gratuita de ExchangeRate-API. Asegurate de revisar los términos de uso y las limitaciones de la API.
+
+La clave API está incluida directamente en el código por simplicidad. En un entorno de producción se recomienda manejarla de forma segura, por ejemplo mediante variables de entorno.
 
 Menu.java: Opciones del menú para el usuario.
 
