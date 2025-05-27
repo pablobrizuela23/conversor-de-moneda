@@ -1,65 +1,51 @@
 # 💱 Conversor de Monedas
 
-Este proyecto es un conversor de monedas desarrollado en **Java** que permite a los usuarios convertir entre diferentes divisas, incluyendo **Dólar estadounidense (USD)**, **Peso Argentino (ARS)**, **Real Brasileño (BRL)** y **Peso Colombiano (COP)**.
+Este proyecto es un conversor de monedas desarrollado en **Java** que permite a los usuarios convertir entre diferentes divisas, incluyendo Dólar estadounidense (USD), Peso Argentino (ARS), Real Brasileño (BRL) y Peso Colombiano (COP).
 
 ## ✨ Características
 
 - Conversión bidireccional entre las siguientes monedas:
-  - Dólar <-> Peso Argentino
-  - Dólar <-> Real Brasileño
-  - Dólar <-> Peso Colombiano
-- Interfaz de línea de comandos fácil de usar.
-- Utiliza la API de [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener tasas de cambio en tiempo real.
-- Manejo de errores para entradas inválidas.
+  - Dólar ↔ Peso Argentino
+  - Dólar ↔ Real Brasileño
+  - Dólar ↔ Peso Colombiano
+- Interfaz de línea de comandos fácil de usar
+- Utiliza la API de [ExchangeRate-API](https://www.exchangerate-api.com/) para obtener tasas de cambio en tiempo real
+- Manejo de errores para entradas inválidas
 
 ## ✅ Requisitos
 
-- Java JDK 11 o superior.
-- Conexión a Internet (para obtener tasas de cambio en tiempo real).
+- Java JDK 11 o superior
+- Conexión a Internet (para obtener tasas de cambio en tiempo real)
 
 ### 📦 Dependencias
 
-- [`Gson`](https://github.com/google/gson) (para el parsing de JSON)
+- [Gson](https://github.com/google/gson): Para el parseo de JSON
 
 ## ▶️ Cómo usar
 
-1. Compilar el proyecto con tu IDE favorito o desde la terminal:
+1. Clona o descarga este repositorio.
+2. Abre el proyecto en tu IDE de preferencia o compílalo desde la línea de comandos con `javac`.
+3. Ejecuta la clase principal `Main`.
+4. Sigue las instrucciones en pantalla:
+   - Selecciona el tipo de conversión que deseas realizar.
+   - Ingresa el monto a convertir cuando se te solicite.
+5. El programa mostrará el resultado de la conversión.
+6. Puedes realizar múltiples conversiones o elegir salir del programa.
 
-   ```bash
-   javac *.java
-Ejecutar el programa:
+## 📁 Estructura del proyecto
 
-bash
-Copiar
-Editar
-java Main
-Seguí las instrucciones en pantalla para:
+- `Main.java`: Contiene el menú principal y la lógica de interacción con el usuario.  
+- `ConversorMoneda.java`: Maneja la lógica de conversión y las llamadas a la API.  
+- `CambioMoneda.java`: Clase `record` para almacenar los datos de la conversión.
 
-Seleccionar el tipo de conversión.
+## ⚠️ Notas
 
-Ingresar el monto que deseás convertir.
+- Este proyecto utiliza la versión gratuita de la API de ExchangeRate-API. Revisa sus términos de uso y limitaciones.
+- Por simplicidad, la clave de la API está incluida directamente en el código. En un entorno profesional, se recomienda almacenarla de forma segura (por ejemplo, en variables de entorno o archivos de configuración).
 
-Visualizar el resultado de la conversión.
+## 🧑‍💻 Autor
 
-El programa te preguntará si deseás continuar. Podés realizar múltiples conversiones o salir del programa.
+Desarrollado como parte de un desafío de aprendizaje en Java.
 
-🗂️ Estructura del proyecto
-Main.java: Contiene el menú principal y la lógica de interacción con el usuario.
+---
 
-ConversorMoneda.java: Maneja la lógica de conversión y las llamadas a la API.
-
-CambioMoneda.java: Clase record que modela los datos de la conversión (respuesta de la API).
-
-Menu.java: Opciones del menú para el usuario.
-
-📌 Notas
-Este proyecto utiliza la API gratuita de ExchangeRate-API. Asegurate de revisar los términos de uso y las limitaciones de la API.
-
-La clave API está incluida directamente en el código por simplicidad. En un entorno de producción se recomienda manejarla de forma segura, por ejemplo mediante variables de entorno.
-
-Menu.java: Opciones del menú para el usuario.
-
-📌 Notas
-Este proyecto utiliza la API gratuita de ExchangeRate-API. Asegurate de revisar los términos de uso y las limitaciones de la API.
-
-La clave API está incluida directamente en el código por simplicidad. En un entorno de producción se recomienda manejarla de forma segura, por ejemplo mediante variables de entorno.
