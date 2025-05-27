@@ -30,17 +30,17 @@ Este proyecto es un conversor de monedas desarrollado en **Java** que permite a 
 
    
 
-Seguí las instrucciones en pantalla para:
+##Seguí las instrucciones en pantalla para:
 
-Seleccionar el tipo de conversión.
+-Seleccionar el tipo de conversión.
 
-Ingresar el monto que deseás convertir.
+-Ingresar el monto que deseás convertir.
 
-Visualizar el resultado de la conversión.
+-Visualizar el resultado de la conversión.
 
-El programa te preguntará si deseás continuar. Podés realizar múltiples conversiones o salir del programa.
+-El programa te preguntará si deseás continuar. Podés realizar múltiples conversiones o salir del programa.
 
-🗂️ Estructura del proyecto
+##🗂️ Estructura del proyecto
 Main.java: Contiene el menú principal y la lógica de interacción con el usuario.
 
 ConversorMoneda.java: Maneja la lógica de conversión y las llamadas a la API.
